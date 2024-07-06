@@ -1,7 +1,9 @@
 package t;
 
 import base.BaseTests;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import reader.ReadDataFromJson;
 
 import java.io.FileNotFoundException;
 
@@ -27,5 +29,15 @@ public class T extends BaseTests {
     public void t4() throws FileNotFoundException {
         System.out.println(dataModel().Login.InvalidCredentials.InvalidPassword.Username);
         System.out.println(dataModel().Login.InvalidCredentials.InvalidPassword.Password);
+    }
+    @DataProvider
+    public Object[][] t5DataProvider() throws FileNotFoundException {
+        readDataFromJson = new ReadDataFromJson();
+        return readDataFromJson.readJsonFile().Login1;
+    }
+    @Test(dataProvider = "t5DataProvider")
+    public void t5(String username, String password){
+        System.out.println(username);
+        System.out.println(password);
     }
 }

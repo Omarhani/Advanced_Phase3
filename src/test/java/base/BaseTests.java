@@ -16,7 +16,7 @@ public class BaseTests {
     WebDriver driver;
     protected HomePage homePage;
 
-    ReadDataFromJson readDataFromJson;
+    protected ReadDataFromJson readDataFromJson;
 
     @BeforeClass
     public void setUp(){
