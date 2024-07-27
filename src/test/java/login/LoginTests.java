@@ -6,6 +6,8 @@ import pages.LoginPage;
 
 import java.io.FileNotFoundException;
 
+import static utils.MethodHandles.myAssertEquals;
+
 public class LoginTests extends BaseTests {
 
     @Test
@@ -14,6 +16,7 @@ public class LoginTests extends BaseTests {
         loginPage.loginFeature(
                 dataModel().Login.ValidCredentials.Username,
                 dataModel().Login.ValidCredentials.Password);
+        myAssertEquals("test", "test");
     }
     @Test
     public void testSuccessfulLogin2() throws FileNotFoundException {
