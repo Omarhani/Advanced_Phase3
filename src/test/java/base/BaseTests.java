@@ -12,9 +12,7 @@ import pages.HomePage;
 import reader.ReadDataFromJson;
 import utils.ScreenRecorderUtil;
 import utils.UtilsTests;
-
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.lang.reflect.Method;
 
 public class BaseTests {
