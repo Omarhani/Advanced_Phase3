@@ -8,4 +8,6 @@ public class HomePage extends MethodHandles {
         super(driver);
     }
 
+    // Hello world
+
 }
