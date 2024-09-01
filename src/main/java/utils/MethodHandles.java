@@ -24,7 +24,8 @@ public class MethodHandles {
     static ExtentTest test;
 
     public MethodHandles(WebDriver driver) {
-        this.driver = driver;
+//        this.driver = driver;
+
     }
 
 
