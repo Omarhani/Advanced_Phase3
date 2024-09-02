@@ -1,18 +1,18 @@
 {
-  "URL" : "",
+  "URL" : "https://automationexercise.com/",
 
   "Login" : {
     "ValidCredentials": {
-      "Username" : "",
-      "Password": ""
+      "Email" : "eyad@gmail.com",
+      "Password": "123456"
     },
     "InvalidCredentials": {
       "InvalidUsername": {
-        "Username" : "",
+        "Email" : "",
         "Password": ""
       },
       "InvalidPassword": {
-        "Username" : "",
+        "Email" : "",
         "Password": ""
       }
     }
