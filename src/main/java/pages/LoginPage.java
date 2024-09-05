@@ -15,8 +15,10 @@ public class LoginPage extends MethodHandles {
     private final By emailField=By.name("email");
     private final By passwordField=By.name("password");
     private final By loginButton=By.xpath("//button[normalize-space()='Login']");
+    private final By validationMessage =By.xpath("//p[contains(text(),'Your email or password is incorrect!')]");
 
-   //Actions
+
+    //Actions
         public boolean loginTextVisible ()
     {
         return  isDisplayed(loginText,3);
@@ -33,6 +35,10 @@ public class LoginPage extends MethodHandles {
     {
         click(loginButton,3);
     }
+
+
+
+
     public HomePage loginFeature(String email,String password)
     {
         insertEmail(email);

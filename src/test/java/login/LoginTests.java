@@ -8,6 +8,8 @@ import pages.LoginPage;
 
 import java.io.FileNotFoundException;
 
+import static org.testng.Assert.assertTrue;
+
 public class LoginTests extends BaseTests {
 
     @Test
@@ -27,5 +29,18 @@ public class LoginTests extends BaseTests {
         DeleteAccountPage deleteAccountPage=homePage.clickOnDeleteAccount();
         //Verify that 'ACCOUNT DELETED!' is visible
         Assert.assertEquals( deleteAccountPage.getMessageDelete(),"ACCOUNT DELETED!");
+    }
+    @Test
+    public void testLoginIncorrectEmailAdnPassword() throws FileNotFoundException {
+        //Verify that home page is visible successfully
+        Assert.assertTrue(homePage.homePageVisible(),"Home page is not visible");
+        // Click on 'Signup / Login' button
+        LoginPage loginPage=homePage.clickOnSignUpAndLoginLink();
+        //Verify 'Login to your account' is visible
+        Assert.assertTrue(loginPage.loginTextVisible(),"'Login to your account' is not visible");
+        //  Enter incorrect email address and password and then Click On Login Button
+        loginPage.loginFeature(dataModel().Login.InvalidCredentials.InvalidUsername.Email,dataModel().Login.InvalidCredentials.InvalidPassword.Password);
+
+
     }
 }

@@ -8,12 +8,12 @@
     },
     "InvalidCredentials": {
       "InvalidUsername": {
-        "Email" : "",
-        "Password": ""
+        "Email" : "eybad@gmail.com",
+        "Password": "123456"
       },
       "InvalidPassword": {
-        "Email" : "",
-        "Password": ""
+        "Email" : "eyad@gmail.com",
+        "Password": "12345"
       }
     }
   }
