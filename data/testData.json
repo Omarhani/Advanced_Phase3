@@ -16,5 +16,13 @@
         "Password": "12345"
       }
     }
+  },
+
+  "ContactUsForm" : {
+    "Name" : "eslam",
+    "Email" : "eslamnasser796@gmail.com",
+    "Subject" : "Test",
+    "Message" : "ContactUsForm Message",
+    "File" : "C:\\Users\\Lenovo\\Downloads\\CLPBRDb9AzIL.png"
   }
 }
