@@ -33,14 +33,15 @@ public class LoginTests extends BaseTests {
     @Test
     public void testLoginIncorrectEmailAdnPassword() throws FileNotFoundException {
         //Verify that home page is visible successfully
-        Assert.assertTrue(homePage.homePageVisible(),"Home page is not visible");
+        Assert.assertTrue(homePage.homePageVisible(), "Home page is not visible");
         // Click on 'Signup / Login' button
-        LoginPage loginPage=homePage.clickOnSignUpAndLoginLink();
+        LoginPage loginPage = homePage.clickOnSignUpAndLoginLink();
         //Verify 'Login to your account' is visible
-        Assert.assertTrue(loginPage.loginTextVisible(),"'Login to your account' is not visible");
+        Assert.assertTrue(loginPage.loginTextVisible(), "'Login to your account' is not visible");
         //  Enter incorrect email address and password and then Click On Login Button
-        loginPage.loginFeature(dataModel().Login.InvalidCredentials.InvalidUsername.Email,dataModel().Login.InvalidCredentials.InvalidPassword.Password);
-
-
-    }
+        loginPage.loginFeature(dataModel().Login.InvalidCredentials.InvalidUsername.Email, dataModel().Login.InvalidCredentials.InvalidPassword.Password);
+        String actualResult =loginPage.getValidationMessage();
+        // Verify error 'Your email or password is incorrect!' is visible
+        String expectedResult="Your email or password is incorrect!";
+        Assert.assertEquals(expectedResult,actualResult);    }
 }

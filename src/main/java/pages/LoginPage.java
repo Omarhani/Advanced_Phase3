@@ -36,9 +36,11 @@ public class LoginPage extends MethodHandles {
         click(loginButton,3);
     }
 
+    public String getValidationMessage()
+    {
 
-
-
+        return getText(validationMessage,3);
+    }
     public HomePage loginFeature(String email,String password)
     {
         insertEmail(email);
