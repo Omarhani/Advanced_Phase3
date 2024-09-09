@@ -33,6 +33,15 @@
   },
 
 
+  "DateOfBirth" : {
+    "ValidCredentials":{
+      "RegisterBirthDay" : "1",
+      "RegisterBirthMonth" : "January",
+      "RegisterBirthYear" : "2021"
+    }
+  },
+
+
   "AddressInfo" : {
     "ValidCredentials": {
       "FirstNameAddressA" : "Ibrahim",
@@ -46,5 +55,6 @@
       "ZipCodeA" : "123456",
       "MobileNumberA" : "673723643"
     }
-  }
+  },
+
 }

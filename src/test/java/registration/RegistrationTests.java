@@ -37,9 +37,9 @@ public class RegistrationTests extends BaseTests {
             register.insertPassword(dataModel().AccountInfo.ValidRegisterAccountCredentials.RegisterAccountPassword);
 
 
-            register.insertBirthDate1("1");
-            register.insertBirthDate2("January");
-            register.insertBirthDate3("2021");
+            register.insertBirthDate1(dataModel().DateOfBirth.ValidRegisterBirthCredentials.RegisterBirthDay);
+            register.insertBirthDate2(dataModel().DateOfBirth.ValidRegisterBirthCredentials.RegisterBirthMonth);
+            register.insertBirthDate3(dataModel().DateOfBirth.ValidRegisterBirthCredentials.RegisterBirthYear);
 
 
             register.checkOnSignUpNewsletter();
