@@ -19,10 +19,7 @@ public class TestCasePage extends BaseTests {
 
         test = testCasePage;
 
-        //Assert.assertTrue(test.getCurrentUrlTestCasePage().contains(dataModel().testCaseUrl.TestCaseURL));
         Assert.assertEquals(test.getCurrentUrlTestCasePage() , dataModel().TestCaseURL.TestCaseUrl);
-
-
 
     }
 }
