@@ -5,4 +5,6 @@ public class DataModel {
     public String URL;
 
     public Login Login;
+
+    public TestCase TestCaseURL;
 }

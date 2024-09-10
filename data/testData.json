@@ -16,5 +16,9 @@
         "Password": "12345"
       }
     }
+  },
+
+  "TestCaseURL" : {
+    "TestCaseUrl" : "https://automationexercise.com/test_cases"
   }
 }
