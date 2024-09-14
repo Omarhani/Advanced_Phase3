@@ -8,8 +8,6 @@ import pages.LoginPage;
 
 import java.io.FileNotFoundException;
 
-import static org.testng.Assert.assertTrue;
-
 public class LoginTests extends BaseTests {
 
     @Test

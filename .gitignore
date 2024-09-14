@@ -39,3 +39,5 @@ build/
 
 *.avi
 *.png
+report.html
+misc.xml
