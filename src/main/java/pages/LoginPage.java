@@ -46,6 +46,12 @@ public class LoginPage extends MethodHandles {
     {
         click(loginButton,3);
     }
+
+    public String getValidationMessage()
+    {
+
+        return getText(validationMessage,3);
+
     private void clickOnSignupButton()
     {
         click(signupButton,3);
