@@ -6,6 +6,9 @@ public class DataModel {
 
     public Login Login;
 
+
+    public ContactUsForm ContactUsForm;
+
     public Registration Registration;
 
     public Registration AccountInfo;
@@ -13,6 +16,5 @@ public class DataModel {
     public Registration DateOfBirth;
 
     public Registration AddressInfo;
-
 
 }

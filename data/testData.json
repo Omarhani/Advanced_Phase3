@@ -18,10 +18,19 @@
     }
   },
 
+
+  "ContactUsForm" : {
+    "Name" : "eslam",
+    "Email" : "eslamnasser796@gmail.com",
+    "Subject" : "Test",
+    "Message" : "ContactUsForm Message",
+    "File" : "C:\\Users\\Lenovo\\Downloads\\CLPBRDb9AzIL.png"
+
   "Registration" : {
     "ValidCredentials":{
     "RegisterName" : "ibrahim",
     "RegisterEmail" : "Ebrahim.salem1@gmail.com"
+
   }
   },
 
