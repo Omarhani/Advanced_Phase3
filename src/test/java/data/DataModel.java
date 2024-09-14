@@ -6,5 +6,15 @@ public class DataModel {
 
     public Login Login;
 
+
     public ContactUsForm ContactUsForm;
+
+    public Registration Registration;
+
+    public Registration AccountInfo;
+
+    public Registration DateOfBirth;
+
+    public Registration AddressInfo;
+
 }
