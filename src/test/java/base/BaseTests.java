@@ -10,6 +10,8 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import pages.HomePage;
 import pages.RegisterPage;
+//import pages.RegisterPage;
+import pages.TestCasePage;
 import reader.ReadDataFromJson;
 import utils.ScreenRecorderUtil;
 import utils.UtilsTests;
@@ -21,6 +23,9 @@ public class BaseTests {
     WebDriver driver;
     protected HomePage homePage;
     protected RegisterPage registerPage;
+    //protected RegisterPage registerPage;
+
+    protected TestCasePage testCasePage;
 
     ChromeOptions chromeOptions;
     FirefoxOptions firefoxOptions;
@@ -36,6 +41,8 @@ public class BaseTests {
         driver.manage().window().maximize();
         homePage = new HomePage(driver);
         registerPage = new RegisterPage(driver);
+        //registerPage = new RegisterPage(driver);
+        testCasePage = new TestCasePage(driver);
     }
 
     @Parameters("browser")

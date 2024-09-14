@@ -14,6 +14,7 @@ public class HomePage extends MethodHandles {
     private final By homePageLink = By.xpath("//a[normalize-space()='Home']");
     private final By loggedLabel = By.xpath("//a[contains(normalize-space(),'Logged in as')]");
     private final By deleteAccountLink=By.linkText("Delete Account");
+    private final By testCaseLink = By.cssSelector("a[href='/test_cases']");
     private  final By productsLink = By.xpath("//a[@href='/products']");
 
 
@@ -22,7 +23,6 @@ public class HomePage extends MethodHandles {
 
     //Actions
     public boolean homePageVisible() {
-
         return isDisplayed(homePageLink, 3);
     }
     public LoginPage clickOnSignUpAndLoginLink()
@@ -57,6 +57,11 @@ public class HomePage extends MethodHandles {
     public ContactUsPage clickOnContactUsLink(){
         click(contactUsLink,3);
         return new ContactUsPage(driver);
+    }
+
+    public TestCasePage clickOnTestCaseBtn(){
+        click(testCaseLink , 3);
+        return new TestCasePage(driver);
     }
 
 

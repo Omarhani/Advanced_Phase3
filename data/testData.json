@@ -18,6 +18,10 @@
     }
   },
 
+  "TestCaseURL" : {
+    "TestCaseUrl" : "https://automationexercise.com/test_cases"
+  },
+
 
   "ContactUsForm" : {
     "Name" : "eslam",
@@ -25,6 +29,7 @@
     "Subject" : "Test",
     "Message" : "ContactUsForm Message",
     "File" : "C:\\Users\\Lenovo\\Downloads\\CLPBRDb9AzIL.png"
+  },
 
   "Registration" : {
     "ValidCredentials":{
@@ -64,6 +69,6 @@
       "ZipCodeA" : "123456",
       "MobileNumberA" : "673723643"
     }
-  },
+  }
 
 }

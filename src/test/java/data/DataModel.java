@@ -6,6 +6,8 @@ public class DataModel {
 
     public Login Login;
 
+    public TestCase TestCaseURL;
+
 
     public ContactUsForm ContactUsForm;
 
