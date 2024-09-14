@@ -17,6 +17,9 @@ public class HomePage extends MethodHandles {
     private  final By productsLink = By.xpath("//a[@href='/products']");
 
 
+    private final By contactUsLink = By.xpath("//a[contains(text(),'Contact us')]");
+
+
     //Actions
     public boolean homePageVisible() {
 
@@ -50,6 +53,11 @@ public class HomePage extends MethodHandles {
         return new ProductsPage(driver);
     }
 
+
+    public ContactUsPage clickOnContactUsLink(){
+        click(contactUsLink,3);
+        return new ContactUsPage(driver);
+    }
 
 
 
