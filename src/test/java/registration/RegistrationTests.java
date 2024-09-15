@@ -32,31 +32,22 @@ public class RegistrationTests extends BaseTests {
 
             Assert.assertEquals(register.getEnterAccountEInfoText() , "ENTER ACCOUNT INFORMATION");
 
+            register.registerAccountForm(dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.RegisterAccountPassword
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.RegisterBirthDay
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.RegisterBirthMonth
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.RegisterBirthYear
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.FirstNameAddressA
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.LastNameAddressA
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.CompanyNameAddressA
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.AddressNameA1
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.AddressNameA2
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.CountryAddressA
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.StateA
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.CityA
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.ZipCodeA
+                    ,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.MobileNumberA);
 
-            register.clickOnTitleBox();
-            register.insertPassword(dataModel().AccountInfo.ValidRegisterAccountCredentials.RegisterAccountPassword);
 
-
-            register.insertBirthDate1(dataModel().DateOfBirth.ValidRegisterBirthCredentials.RegisterBirthDay);
-            register.insertBirthDate2(dataModel().DateOfBirth.ValidRegisterBirthCredentials.RegisterBirthMonth);
-            register.insertBirthDate3(dataModel().DateOfBirth.ValidRegisterBirthCredentials.RegisterBirthYear);
-
-
-            register.checkOnSignUpNewsletter();
-            register.checkOnReceiveSpecialOffers();
-
-
-            register.insertFirstNameAddress(dataModel().AddressInfo.ValidRegisterAddressCredentials.FirstNameAddressA);
-            register.insertLastNameAddress(dataModel().AddressInfo.ValidRegisterAddressCredentials.LastNameAddressA);
-            register.insertCompanyNameAddress(dataModel().AddressInfo.ValidRegisterAddressCredentials.CompanyNameAddressA);
-            register.insertAddressName1(dataModel().AddressInfo.ValidRegisterAddressCredentials.AddressNameA1);
-            register.insertAddressName2(dataModel().AddressInfo.ValidRegisterAddressCredentials.AddressNameA2);
-            register.insertCountryAddress(dataModel().AddressInfo.ValidRegisterAddressCredentials.CountryAddressA);
-            register.insertState(dataModel().AddressInfo.ValidRegisterAddressCredentials.StateA);
-            register.insertCity(dataModel().AddressInfo.ValidRegisterAddressCredentials.CityA);
-            register.insertZipCode(dataModel().AddressInfo.ValidRegisterAddressCredentials.ZipCodeA);
-            register.insertMobileNumber(dataModel().AddressInfo.ValidRegisterAddressCredentials.MobileNumberA);
-            register.clickOnCreateAccountBtn();
 
 
             Assert.assertEquals(register.accountCreatedTxtVisible() , "ACCOUNT CREATED!");

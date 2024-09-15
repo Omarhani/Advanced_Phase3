@@ -34,30 +34,18 @@
   "Registration" : {
     "ValidCredentials":{
     "RegisterName" : "ibrahim",
-    "RegisterEmail" : "Ebrahim.salem1@gmail.com"
+    "RegisterEmail" : "Ebrahimovic.salem11@gmail.com"
 
   }
   },
 
 
-  "AccountInfo" : {
-    "ValidCredentials":{
-      "RegisterAccountPassword" : "123456789"
-    }
-  },
-
-
-  "DateOfBirth" : {
-    "ValidCredentials":{
+  "RegistrationAccountForm" : {
+    "ValidRegisterAccountCredentials":{
+      "RegisterAccountPassword" : "123456789",
       "RegisterBirthDay" : "1",
       "RegisterBirthMonth" : "January",
-      "RegisterBirthYear" : "2021"
-    }
-  },
-
-
-  "AddressInfo" : {
-    "ValidCredentials": {
+      "RegisterBirthYear" : "2021",
       "FirstNameAddressA" : "Ibrahim",
       "LastNameAddressA" : "Salem",
       "CompanyNameAddressA" : "Google",
