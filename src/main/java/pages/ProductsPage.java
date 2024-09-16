@@ -13,6 +13,8 @@ public class ProductsPage extends MethodHandles {
     private  final By productsPage = By.xpath("//a[@href='/products' and contains(@style, 'color: orange;')]");
     private  final By productsDetailsLink = By.xpath("//a[@href='/product_details/1' and contains(@style, 'color: brown;')]");
 
+    private final By searchProductText = By.xpath("(//input[@id='search_product'])[1]");
+    private final By searchBtn = By.cssSelector("#submit_search");
     //Actions
     public boolean productsPageVisible() {
         return isDisplayed(productsPage, 3);
@@ -21,6 +23,16 @@ public class ProductsPage extends MethodHandles {
     {
         click(productsDetailsLink,3);
         return new ProductsDetailsPage(driver);
+    }
+
+
+    public void insertSearchProductTxt(String searchTxt){
+        sendKeys(searchProductText , 3 , searchTxt);
+    }
+
+    public ProductsSearch clickOnSearchBtn(){
+        click(searchBtn , 3);
+        return new ProductsSearch(driver);
     }
 
 }

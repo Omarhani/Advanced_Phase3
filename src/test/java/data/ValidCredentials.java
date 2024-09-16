@@ -21,6 +21,7 @@ public class ValidCredentials {
     public String CityA;
     public String ZipCodeA;
     public String MobileNumberA;
+    public String Product;
 
 
 
