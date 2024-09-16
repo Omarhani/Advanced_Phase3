@@ -16,8 +16,9 @@ public class HomePage extends MethodHandles {
     private final By deleteAccountLink=By.linkText("Delete Account");
     private final By testCaseLink = By.cssSelector("a[href='/test_cases']");
     private  final By productsLink = By.xpath("//a[@href='/products']");
-
-
+    private final By categoryText=By.xpath("//h2[contains(text(),'Category')]");
+    private final By womanCategories=By.xpath("//a[normalize-space()='Women']");
+    private final By womanSubCategoryTops=By.xpath("//a[normalize-space()='Tops']");
     private final By contactUsLink = By.xpath("//a[contains(text(),'Contact us')]");
 
 
@@ -47,7 +48,7 @@ public class HomePage extends MethodHandles {
         click(logoutLink,3);
         return new LoginPage(driver);
     }
-    public ProductsPage  clickProductsLinkLink()
+    public ProductsPage clickProductsLinkLink()
     {
         click(productsLink,3);
         return new ProductsPage(driver);
@@ -63,7 +64,19 @@ public class HomePage extends MethodHandles {
         click(testCaseLink , 3);
         return new TestCasePage(driver);
     }
-
+    public boolean categoryIsVisible()
+    {
+        return isDisplayed(categoryText,3);
+    }
+    public void clickOnCategoryWoman()
+    {
+        click(womanCategories,3);
+    }
+    public CategoryProductsPage clickOnWomenSubCategory()
+    {
+        click(womanSubCategoryTops,3);
+        return new CategoryProductsPage(driver);
+    }
 
 
 
