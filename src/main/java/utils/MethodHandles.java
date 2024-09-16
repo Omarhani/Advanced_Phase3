@@ -63,7 +63,19 @@ public class MethodHandles {
             }
         }
     }
+    protected void getLocation(By locator, int time) {
+        for (int i = 0; i < 5; i++) {
+            try {
+                explicitWait(locator, time);
+                setSteps();
+                addBorderToElement(driver, webElement(locator));
+                webElement(locator).getLocation();
+                break;
+            } catch (StaleElementReferenceException e) {
 
+            }
+        }
+    }
     protected void clear(By locator, int time) {
         for (int i = 0; i < 5; i++) {
             try {
