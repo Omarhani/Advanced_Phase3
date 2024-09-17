@@ -16,6 +16,7 @@ public class HomePage extends MethodHandles {
     private final By deleteAccountLink=By.linkText("Delete Account");
     private final By testCaseLink = By.cssSelector("a[href='/test_cases']");
     private  final By productsLink = By.xpath("//a[@href='/products']");
+    private final By cartLink=By.linkText("Cart");
 
 
     private final By contactUsLink = By.xpath("//a[contains(text(),'Contact us')]");
@@ -63,12 +64,11 @@ public class HomePage extends MethodHandles {
         click(testCaseLink , 3);
         return new TestCasePage(driver);
     }
-
-
-
-
-
-
+    public ViewCartPage clickOnCartLink()
+    {
+        click(cartLink,3);
+        return new ViewCartPage(driver);
+    }
 
 
 }
