@@ -64,6 +64,12 @@
     "SearchedOnProducts":{
       "Product" : "Men Tshirt"
     }
+  },
+
+  "Subscriptions" : {
+    "subscriptionEmail":{
+      "EmailAddress" : "test.num1@gmail.com"
+    }
   }
 
 }

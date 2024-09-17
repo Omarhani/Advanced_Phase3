@@ -22,6 +22,7 @@ public class ValidCredentials {
     public String ZipCodeA;
     public String MobileNumberA;
     public String Product;
+    public String EmailAddress;
 
 
 

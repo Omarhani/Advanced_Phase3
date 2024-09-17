@@ -17,8 +17,13 @@ public class HomePage extends MethodHandles {
     private final By testCaseLink = By.cssSelector("a[href='/test_cases']");
     private  final By productsLink = By.xpath("//a[@href='/products']");
 
-
     private final By contactUsLink = By.xpath("//a[contains(text(),'Contact us')]");
+    private final By getSubscriptionTxt = By.cssSelector("div[class='single-widget'] h2");
+    private final By enterEmailAddressInput = By.cssSelector("#susbscribe_email");
+    private final By subscriptionArrowBtn = By.cssSelector("#subscribe");
+    private final By successfulMessageTxt = By.cssSelector(".alert-success.alert");
+
+
 
 
     //Actions
@@ -63,6 +68,24 @@ public class HomePage extends MethodHandles {
         click(testCaseLink , 3);
         return new TestCasePage(driver);
     }
+
+    public String getSubscriptionText(){
+        return getText(getSubscriptionTxt , 3);
+    }
+
+    public void insertEmailAddressText(String emailAddress ){
+        sendKeys(enterEmailAddressInput , 3 , emailAddress);
+    }
+
+    public void clickOnSubscriptionArrowBtn(){
+        click(subscriptionArrowBtn , 3);
+    }
+
+    public boolean getSuccessfulMessageTxt(){
+        return isDisplayed(successfulMessageTxt , 3);
+    }
+
+
 
 
 
