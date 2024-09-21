@@ -29,6 +29,7 @@ public class HomePage extends MethodHandles {
     private final By productOverlay = By.cssSelector(".product-overlay .overlay-content");
 
 
+
     private final By contactUsLink = By.xpath("//a[contains(text(),'Contact us')]");
     private final By getSubscriptionTxt = By.cssSelector("div[class='single-widget'] h2");
     private final By enterEmailAddressInput = By.cssSelector("#susbscribe_email");
