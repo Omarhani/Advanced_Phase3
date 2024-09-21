@@ -34,11 +34,22 @@
   "Registration" : {
     "ValidCredentials":{
     "RegisterName" : "ibrahim",
-    "RegisterEmail" : "Ebrahimovic.salem11@gmail.com"
+    "RegisterEmail" : "Ebrahimovic.salem15571@gmail.com"
 
   }
   },
 
+  "Checkout" : {
+    "Comment":"123"
+  },
+
+  "Payment" : {
+    "Name": "123",
+    "Number": "132354",
+    "CVC": "123",
+    "Month": "01",
+    "Year": "1999"
+  },
 
   "RegistrationAccountForm" : {
     "ValidRegisterAccountCredentials":{

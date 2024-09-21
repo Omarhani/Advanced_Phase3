@@ -238,6 +238,21 @@ public class RegisterPage extends MethodHandles {
         return this;
     }
 
+    public AccountCreatedPage registerFeature(String pass,String firstName,String lastName,String address,String country,String state,String city,String zip,String mobileNum){
+        clickOnTitleBox();
+        insertPassword(pass);
+        insertFirstNameAddress(firstName);
+        insertLastNameAddress(lastName);
+        insertAddressName1(address);
+        insertCountryAddress(country);
+        insertState(state);
+        insertCity(city);
+        insertZipCode(zip);
+        insertMobileNumber(mobileNum);
+        clickOnCreateAccountBtn();
+        return new AccountCreatedPage(driver);
+    }
+
     public void registerAccountForm(String password , String dayBirth , String monthBirth , String yearBrith
                                     ,String firstNameAddressR , String lastNameAddressR , String companyNameAddressR
                                     ,String addressNameR , String addressNameR2 , String countryAddressR
