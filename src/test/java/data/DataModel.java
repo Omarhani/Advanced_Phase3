@@ -13,10 +13,6 @@ public class DataModel {
 
     public Registration Registration;
 
-    public Registration AccountInfo;
-
-    public Registration DateOfBirth;
-
-    public Registration AddressInfo;
+    public Registration RegistrationAccountForm;
 
 }

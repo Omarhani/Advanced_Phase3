@@ -8,12 +8,9 @@ public class ValidCredentials {
     public String RegisterEmail;
 
     public String RegisterAccountPassword;
-
     public String RegisterBirthDay;
     public String RegisterBirthMonth;
     public String RegisterBirthYear;
-
-
     public String FirstNameAddressA;
     public String LastNameAddressA;
     public String CompanyNameAddressA;
