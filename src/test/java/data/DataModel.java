@@ -15,4 +15,6 @@ public class DataModel {
 
     public Registration RegistrationAccountForm;
 
+    public Product SearchOnProducts;
+
 }
