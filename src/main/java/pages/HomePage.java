@@ -22,6 +22,8 @@ public class HomePage extends MethodHandles {
     private final By enterEmailAddressInput = By.cssSelector("#susbscribe_email");
     private final By subscriptionArrowBtn = By.cssSelector("#subscribe");
     private final By successfulMessageTxt = By.cssSelector(".alert-success.alert");
+    private final By cartLinkPage = By.cssSelector("body > header:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)");
+
 
 
 
@@ -83,6 +85,11 @@ public class HomePage extends MethodHandles {
 
     public boolean getSuccessfulMessageTxt(){
         return isDisplayed(successfulMessageTxt , 3);
+    }
+
+    public ProductsCart clickOnCartLinkPage(){
+        click(cartLinkPage , 3);
+        return new ProductsCart(driver);
     }
 
 
