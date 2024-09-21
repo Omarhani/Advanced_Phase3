@@ -13,6 +13,8 @@ public class DataModel {
 
     public Registration Registration;
     public Registration2 Registration2;
+    public Checkout Checkout;
+    public Payment Payment;
 
     public Registration AccountInfo;
 

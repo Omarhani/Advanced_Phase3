@@ -28,8 +28,8 @@ public class PlaceOrderRegisterBeforeCheckoutTest extends BaseTests {
         CheckoutPage checkoutPage=viewCartPage.redirectToCheckoutPage();
         assertTrue(checkoutPage.isAddressLabelVisible(),"Address is not visible");
         assertTrue(checkoutPage.isReviewLabelVisible(),"Review is not visible");
-        PaymentPage paymentPage=checkoutPage.checkoutFeature("123");
-        PaymentDonePage paymentDonePage=paymentPage.paymentFeature("132132123","12313","123","12","12312");
+        PaymentPage paymentPage=checkoutPage.checkoutFeature(dataModel().Checkout.Comment);
+        PaymentDonePage paymentDonePage=paymentPage.paymentFeature(dataModel().Payment.Name,dataModel().Payment.Number,dataModel().Payment.CVC,dataModel().Payment.Month,dataModel().Payment.Year);
         assertTrue(paymentDonePage.getPaymentSuccessMessage().contains("Congratulations! Your order has been confirmed!"));
         DeleteAccountPage deleteAccountPage=paymentDonePage.clickOnDeleteAccount();
         Assert.assertEquals(deleteAccountPage.getMessageDelete() , "ACCOUNT DELETED!");
