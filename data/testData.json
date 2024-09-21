@@ -38,6 +38,19 @@
 
   }
   },
+  "Registration2" : {
+    "RegisterName" : "ibrahim",
+    "RegisterEmail" : "Ebrahim.sal12em1@gmail56454.com",
+    "RegisterAccountPassword" : "123456789",
+    "FirstNameAddressA" : "Ibrahim",
+    "LastNameAddressA" : "Salem",
+    "AddressNameA1" : "London32",
+    "CountryAddressA" : "Canada",
+    "StateA" : "Single",
+    "CityA" : "London",
+    "ZipCodeA" : "123456",
+    "MobileNumberA" : "673723643"
+  },
 
 
   "AccountInfo" : {
