@@ -15,11 +15,11 @@ public class PlaceOrderRegisterBeforeCheckoutTest extends BaseTests {
     public void testPlaceOrderRegisterBeforeCheckout() throws FileNotFoundException {
         assertTrue(homePage.homePageVisible(),"Home page is not visible");
         LoginPage loginPage=homePage.clickOnSignUpAndLoginLink();
-        RegisterPage1 registerPage1=loginPage.redirectToRegisterPage(dataModel().Registration2.RegisterEmail,dataModel().Registration2.RegisterName);
-        AccountCreatedPage accountCreatedPage=registerPage1.registerFeature(dataModel().Registration2.RegisterAccountPassword,dataModel().Registration2.FirstNameAddressA,dataModel().Registration2.LastNameAddressA,dataModel().Registration2.AddressNameA1,dataModel().Registration2.CountryAddressA,dataModel().Registration2.StateA,dataModel().Registration2.CityA,dataModel().Registration2.ZipCodeA,dataModel().Registration2.MobileNumberA);
+        RegisterPage registerPage=loginPage.redirectToRegisterPage(dataModel().Registration.ValidCredentials.RegisterEmail,dataModel().Registration.ValidCredentials.RegisterName);
+        AccountCreatedPage accountCreatedPage=registerPage.registerFeature(dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.RegisterAccountPassword,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.FirstNameAddressA,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.LastNameAddressA,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.AddressNameA1,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.CountryAddressA,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.StateA,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.CityA,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.ZipCodeA,dataModel().RegistrationAccountForm.ValidRegisterAccountCredentials.MobileNumberA);
         Assert.assertEquals(accountCreatedPage.accountCreatedTxtVisible() , "ACCOUNT CREATED!");
         HomePage homePage1=accountCreatedPage.clickOnContinueBtn();
-        Assert.assertEquals(homePage1.getLoggedUsername(),"Logged in as "+dataModel().Registration2.RegisterName);
+        Assert.assertEquals(homePage1.getLoggedUsername(),"Logged in as "+dataModel().Registration.ValidCredentials.RegisterName);
         ProductOverlay productOverlay =homePage1.addProductToViewCart(2);
         productOverlay.clickOnAddToCartBtn();
         homePage1.clickOnContinueShoppingBtn();

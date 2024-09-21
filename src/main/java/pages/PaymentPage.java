@@ -42,4 +42,5 @@ public class PaymentPage extends MethodHandles {
         clickOnSubmitBtn();
         return new PaymentDonePage(driver);
     }
+
 }
