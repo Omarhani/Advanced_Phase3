@@ -77,4 +77,12 @@ public class LoginPage extends MethodHandles {
         insertName(name);
         clickOnSignupButton();
     }
+
+    public RegisterPage redirectToRegisterPage(String signupemail,String name){
+        insertSignupEmail(signupemail);
+        insertName(name);
+        clickOnSignupButton();
+        return new RegisterPage(driver);
+    }
+
 }

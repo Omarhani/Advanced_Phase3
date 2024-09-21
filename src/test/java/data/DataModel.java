@@ -15,10 +15,10 @@ public class DataModel {
     public Checkout Checkout;
     public Payment Payment;
 
-    public Registration AccountInfo;
+    public Registration RegistrationAccountForm;
 
-    public Registration DateOfBirth;
+    public Product SearchOnProducts;
 
-    public Registration AddressInfo;
+    public SubscriptionHome Subscriptions;
 
 }

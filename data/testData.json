@@ -34,7 +34,7 @@
   "Registration" : {
     "ValidCredentials":{
     "RegisterName" : "ibrahim",
-    "RegisterEmail" : "Ebrahim.salem1@gmail.com"
+    "RegisterEmail" : "Ebrahimovic.salem15571@gmail.com"
 
   }
   },
@@ -51,24 +51,12 @@
     "Year": "1999"
   },
 
-  "AccountInfo" : {
-    "ValidCredentials":{
-      "RegisterAccountPassword" : "123456789"
-    }
-  },
-
-
-  "DateOfBirth" : {
-    "ValidCredentials":{
+  "RegistrationAccountForm" : {
+    "ValidRegisterAccountCredentials":{
+      "RegisterAccountPassword" : "123456789",
       "RegisterBirthDay" : "1",
       "RegisterBirthMonth" : "January",
-      "RegisterBirthYear" : "2021"
-    }
-  },
-
-
-  "AddressInfo" : {
-    "ValidCredentials": {
+      "RegisterBirthYear" : "2021",
       "FirstNameAddressA" : "Ibrahim",
       "LastNameAddressA" : "Salem",
       "CompanyNameAddressA" : "Google",
@@ -79,6 +67,19 @@
       "CityA" : "London",
       "ZipCodeA" : "123456",
       "MobileNumberA" : "673723643"
+    }
+  },
+
+
+  "SearchOnProducts" : {
+    "SearchedOnProducts":{
+      "Product" : "Men Tshirt"
+    }
+  },
+
+  "Subscriptions" : {
+    "subscriptionEmail":{
+      "EmailAddress" : "test.num1@gmail.com"
     }
   }
 

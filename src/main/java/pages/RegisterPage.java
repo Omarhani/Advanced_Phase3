@@ -238,4 +238,43 @@ public class RegisterPage extends MethodHandles {
         return this;
     }
 
+    public AccountCreatedPage registerFeature(String pass,String firstName,String lastName,String address,String country,String state,String city,String zip,String mobileNum){
+        clickOnTitleBox();
+        insertPassword(pass);
+        insertFirstNameAddress(firstName);
+        insertLastNameAddress(lastName);
+        insertAddressName1(address);
+        insertCountryAddress(country);
+        insertState(state);
+        insertCity(city);
+        insertZipCode(zip);
+        insertMobileNumber(mobileNum);
+        clickOnCreateAccountBtn();
+        return new AccountCreatedPage(driver);
+    }
+
+    public void registerAccountForm(String password , String dayBirth , String monthBirth , String yearBrith
+                                    ,String firstNameAddressR , String lastNameAddressR , String companyNameAddressR
+                                    ,String addressNameR , String addressNameR2 , String countryAddressR
+                                    ,String stateNameR , String cityNameR , String zipCodeName , String mobileNum){
+
+        clickOnTitleBox();
+        insertPassword(password);
+        checkOnSignUpNewsletter();
+        checkOnReceiveSpecialOffers();
+        insertBirthDate1(dayBirth);
+        insertBirthDate2(monthBirth);
+        insertBirthDate3(yearBrith);
+        insertFirstNameAddress(firstNameAddressR);
+        insertLastNameAddress(lastNameAddressR);
+        insertCompanyNameAddress(companyNameAddressR);
+        insertAddressName1(addressNameR);
+        insertAddressName2(addressNameR2);
+        insertCountryAddress(countryAddressR);
+        insertState(stateNameR);
+        insertCity(cityNameR);
+        insertZipCode(zipCodeName);
+        insertMobileNumber(mobileNum);
+        clickOnCreateAccountBtn();
+    }
 }

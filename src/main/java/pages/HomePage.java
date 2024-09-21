@@ -31,6 +31,14 @@ public class HomePage extends MethodHandles {
 
 
     private final By contactUsLink = By.xpath("//a[contains(text(),'Contact us')]");
+    private final By getSubscriptionTxt = By.cssSelector("div[class='single-widget'] h2");
+    private final By enterEmailAddressInput = By.cssSelector("#susbscribe_email");
+    private final By subscriptionArrowBtn = By.cssSelector("#subscribe");
+    private final By successfulMessageTxt = By.cssSelector(".alert-success.alert");
+    private final By cartLinkPage = By.cssSelector("body > header:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)");
+
+
+
 
 
     //Actions
@@ -94,6 +102,29 @@ public class HomePage extends MethodHandles {
         click(viewCartBtn,5);
         return new ViewCartPage(driver);
     }
+
+
+    public String getSubscriptionText(){
+        return getText(getSubscriptionTxt , 3);
+    }
+
+    public void insertEmailAddressText(String emailAddress ){
+        sendKeys(enterEmailAddressInput , 3 , emailAddress);
+    }
+
+    public void clickOnSubscriptionArrowBtn(){
+        click(subscriptionArrowBtn , 3);
+    }
+
+    public boolean getSuccessfulMessageTxt(){
+        return isDisplayed(successfulMessageTxt , 3);
+    }
+
+    public ProductsCart clickOnCartLinkPage(){
+        click(cartLinkPage , 3);
+        return new ProductsCart(driver);
+    }
+
 
 
 
