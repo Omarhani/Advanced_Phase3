@@ -12,6 +12,8 @@ public class DataModel {
     public ContactUsForm ContactUsForm;
 
     public Registration Registration;
+    public Checkout Checkout;
+    public Payment Payment;
 
     public Registration AccountInfo;
 

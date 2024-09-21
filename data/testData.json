@@ -39,6 +39,17 @@
   }
   },
 
+  "Checkout" : {
+    "Comment":"123"
+  },
+
+  "Payment" : {
+    "Name": "123",
+    "Number": "132354",
+    "CVC": "123",
+    "Month": "01",
+    "Year": "1999"
+  },
 
   "AccountInfo" : {
     "ValidCredentials":{
