@@ -5,9 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import utils.MethodHandles;
 
-public class RegisterPage extends MethodHandles {
+public class RegisterPage1 extends MethodHandles {
 
-    public RegisterPage(WebDriver driver) {
+    public RegisterPage1(WebDriver driver) {
         super(driver);
     }
 
@@ -47,195 +47,168 @@ public class RegisterPage extends MethodHandles {
 
 
 
-     
+
     public String userSignUpTextVisible(){
         return getText(userSignUpText , 3);
     }
 
-     
-    public RegisterPage insertRegisterName(String name){
+
+    public void insertRegisterName(String name){
         sendKeys(registerName , 3 , name);
-        return this;
     }
 
-     
-    public RegisterPage insertRegisterEmail(String email){
+
+    public void insertRegisterEmail(String email){
         sendKeys(registerEmail , 3 , email);
-        return this;
     }
 
-     
-    public RegisterPage clickOnRegisterBtn(){
+
+    public void clickOnRegisterBtn(){
         click(registerBtn , 3);
-        return this;
     }
 
-     
+
     public String getEnterAccountEInfoText(){
         return getText(enterAccountText , 3);
     }
 
-     
-    public RegisterPage clickOnTitleBox(){
+
+    public void clickOnTitleBox(){
         click(fillTitle , 3);
-        return this;
     }
 
 
-     
-    public RegisterPage insertName(String name1){
+
+    public void insertName(String name1){
         clear(fillName , 3);
         sendKeys(fillName , 3 , name1);
-        return this;
     }
 
-     
-    public RegisterPage insertEmail(String email1){
+
+    public void insertEmail(String email1){
         clear(fillEmail , 3);
         sendKeys(fillEmail , 3 , email1);
-        return this;
     }
 
 
-     
-    public RegisterPage insertPassword(String pass1){
+
+    public void insertPassword(String pass1){
         sendKeys(fillPassword , 3 , pass1);
-        return this;
     }
 
-     
-    public RegisterPage checkOnSignUpNewsletter(){
+
+    public void checkOnSignUpNewsletter(){
         click(clickSignUpNewsletter , 3);
-        return this;
     }
 
-     
-    public RegisterPage checkOnReceiveSpecialOffers(){
+
+    public void checkOnReceiveSpecialOffers(){
         click(clickReceiveSpecialOffers , 3);
-        return this;
     }
 
-     
-    public RegisterPage insertBirthDate1(String day){
+
+    public void insertBirthDate1(String day){
         select  = new Select(driver.findElement(fillDateOfBirth1));
         select.selectByVisibleText(day);
-        return this;
     }
 
-     
-    public RegisterPage insertBirthDate2(String month){
+
+    public void insertBirthDate2(String month){
         select = new Select(driver.findElement(fillDateOfBirth2));
         select.selectByVisibleText(month);
-        return this;
     }
 
-     
-    public RegisterPage insertBirthDate3(String year){
+
+    public void insertBirthDate3(String year){
 
         select = new Select(driver.findElement(fillDateOfBirth3));
         select.selectByVisibleText(year);
-        return this;
     }
 
-     
-    public RegisterPage insertFirstNameAddress(String firstNameAddress1){
+
+    public void insertFirstNameAddress(String firstNameAddress1){
         sendKeys(firstNameAddress , 3 , firstNameAddress1);
-        return this;
     }
 
-     
-    public RegisterPage insertLastNameAddress(String lastNameAddress1){
+
+    public void insertLastNameAddress(String lastNameAddress1){
         sendKeys(lastNameAddress , 3 , lastNameAddress1);
-        return this;
     }
 
-     
-    public RegisterPage insertCompanyNameAddress(String companyNameAddress1){
+
+    public void insertCompanyNameAddress(String companyNameAddress1){
         sendKeys(companyAddress , 3 , companyNameAddress1);
-        return this;
     }
 
-     
-    public RegisterPage insertAddressName1(String addressName1){
+
+    public void insertAddressName1(String addressName1){
         sendKeys(AddressName1 , 3 , addressName1);
-        return this;
     }
 
-     
-    public RegisterPage insertAddressName2(String addressName2){
+
+    public void insertAddressName2(String addressName2){
         sendKeys(AddressName2 , 3 , addressName2);
-        return this;
     }
 
-     
-    public RegisterPage insertCountryAddress(String countryAddress){
+
+    public void insertCountryAddress(String countryAddress){
         select  = new Select(driver.findElement(countryName));
         select.selectByVisibleText(countryAddress);
-        return this;
     }
 
-     
-    public RegisterPage insertState(String stateName1){
+
+    public void insertState(String stateName1){
         sendKeys(stateName , 3 , stateName1);
-
-        return this;
     }
 
-     
-    public RegisterPage insertCity(String cityName1){
+
+    public void insertCity(String cityName1){
         sendKeys(cityName , 3 , cityName1);
-        return this;
     }
 
-     
-    public RegisterPage insertZipCode(String zipCodeName1){
+
+    public void insertZipCode(String zipCodeName1){
         sendKeys(zipcodeName , 3 , zipCodeName1);
-        return this;
     }
 
-     
-    public RegisterPage insertMobileNumber(String mobileNum1){
+
+    public void insertMobileNumber(String mobileNum1){
         sendKeys(mobileNumber1 , 3 , mobileNum1);
-        return this;
     }
 
-     
-    public RegisterPage clickOnCreateAccountBtn(){
+
+    public void clickOnCreateAccountBtn(){
         click(createAccountBtn , 3);
-        return this;
     }
 
-     
+
     public String accountCreatedTxtVisible(){
         return getText(accountCreatedText , 3);
     }
 
-     
-    public RegisterPage clickOnContinueBtn(){
+
+    public void clickOnContinueBtn(){
         click(continueBtn , 3);
-        return this;
     }
 
-     
+
     public String loggedInUserNameTxtVisible(){
         return getText(loggedInUserName , 3);
     }
 
-     
-    public RegisterPage clickOnDeleteAccount(){
+
+    public void clickOnDeleteAccount(){
         click(deleteAccountBtn , 3);
-        return this;
     }
 
-     
+
     public String accountDeletedTxtVisible(){
         return getText(accountDeletedText , 3);
     }
 
-     
-    public RegisterPage clickOnContinueDeleteBtn(){
+
+    public void clickOnContinueDeleteBtn(){
         click(continueDeleteBtn , 3);
-        return this;
     }
 
     public AccountCreatedPage registerFeature(String pass,String firstName,String lastName,String address,String country,String state,String city,String zip,String mobileNum){
