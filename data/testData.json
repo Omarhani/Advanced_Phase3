@@ -34,23 +34,11 @@
   "Registration" : {
     "ValidCredentials":{
     "RegisterName" : "ibrahim",
-    "RegisterEmail" : "Ebrahimovic.salem11@gmail.com"
+    "RegisterEmail" : "Ebrahimovic.salem15571@gmail.com"
 
   }
   },
-  "Registration2" : {
-    "RegisterName" : "ibrahim",
-    "RegisterEmail" : "Ebrahim.salem1@gmail564545888966621.com",
-    "RegisterAccountPassword" : "123456789",
-    "FirstNameAddressA" : "Ibrahim",
-    "LastNameAddressA" : "Salem",
-    "AddressNameA1" : "London32",
-    "CountryAddressA" : "Canada",
-    "StateA" : "Single",
-    "CityA" : "London",
-    "ZipCodeA" : "123456",
-    "MobileNumberA" : "673723643"
-  },
+
   "Checkout" : {
     "Comment":"123"
   },

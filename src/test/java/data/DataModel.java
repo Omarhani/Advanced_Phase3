@@ -12,7 +12,6 @@ public class DataModel {
     public ContactUsForm ContactUsForm;
 
     public Registration Registration;
-    public Registration2 Registration2;
     public Checkout Checkout;
     public Payment Payment;
 

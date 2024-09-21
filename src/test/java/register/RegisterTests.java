@@ -5,10 +5,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DeleteAccountPage;
 import pages.LoginPage;
+import pages.RegisterPage;
 
 import java.io.FileNotFoundException;
 
 public class RegisterTests extends BaseTests {
+    RegisterPage register;
+    LoginPage log;
     @Test
     public void testRegisterUserWithExistingEmail() throws FileNotFoundException {
         //Verify that home page is visible successfully
