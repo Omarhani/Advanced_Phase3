@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import utils.MethodHandles;
 
 public class ProductsDetailsPage extends MethodHandles {
-
     public ProductsDetailsPage(WebDriver driver) {
         super(driver);
     }

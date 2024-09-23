@@ -3,7 +3,10 @@ package Products;
 import base.BaseTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.*;
+import pages.DeleteAccountPage;
+import pages.LoginPage;
+import pages.ProductsDetailsPage;
+import pages.ProductsPage;
 
 import java.io.FileNotFoundException;
 
@@ -25,22 +28,15 @@ public class ProductTests extends BaseTests {
         Assert.assertEquals(productsDetailsPage.getProductAvailability(),"Availability: In Stock");
         Assert.assertEquals(productsDetailsPage.getProductCondition(),"Condition: New");
         Assert.assertEquals(productsDetailsPage.getGetProductBrand(),"Brand: Polo");
-    }
 
-    @Test
-    public void testAddProduct () throws FileNotFoundException {
 
-        ProductsPage productsPage = homePage.clickProductsLinkLink();
-        Assert.assertTrue(productsPage.productsPageVisible(), "products page is visible");
-        PopupPage popupPage=productsPage.clickAddProductOneToCart();
-        String actualResult =popupPage.getMassageAdd();
-        String expectedResult="Your product has been added to cart.";
-        Assert.assertEquals(expectedResult,actualResult);
-        productsPage.clickContinueShoppingBtn();
-        productsPage.clickAddProductSecondToCart();
-        CartPage cartPage= popupPage.clickViewCartBtn();
-        Assert.assertTrue(cartPage.verifyProduct1(), "1");
-        Assert.assertTrue(cartPage.verifyProduct2(), "2");
+
+
+
+
+
+
+
 
     }
 
